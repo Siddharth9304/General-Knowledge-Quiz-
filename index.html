@@ -3,17 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>G.K Quiz</title>
+    <title>Dynamic Quiz Website</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <h1>General Knowledge Quiz</h1>
+    <h1>Test Your Knowledge</h1>
     <div id="noQuestions">
-    <div>
-        <label for="noQuestionsInput">Enter Number of Questions:</label>
-        <input id="noQuestionsInput" type="number" name="noQuestions" min="1" max="60" value="5">
-    </div>
-    <button id="restartQuiz">Restart Quiz</button>
+        <div>
+            <label for="noQuestionsInput">Enter No. of Questions:</label>
+            <input id="noQuestionsInput" type="number" name="noQuestions" min="1" max="60" value="5">
+        </div>
+        <div>
+            <select name="topic"  id="topic" required>
+                <option value="G.K" disabled selected>Select Topic</option>
+                <option value="G.K">G.K</option>
+                <option value="Maths">Maths</option>
+                <option value="Science">Science</option>
+            </select>
+        </div>
+        <button id="restartQuiz">Restart Quiz</button>
     </div>
     <form id="quizContainer">
         <button type="submit" id="submitButton">Submit</button>
