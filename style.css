@@ -26,19 +26,28 @@ h1{
     margin-top: 20px;
     font-size: 18px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 #noQuestions>div{
-    width: 70%;
+    display: flex;
+}
+
+#topic{
+    height: 22px;
+    width: 120px;
+    padding: 2px;
+    padding-left: 5px;
+    background-color: white;
+    cursor: pointer;
 }
 
 #noQuestionsInput{
     height: 18px;
-    width: 30%;
+    width: 80px;
     padding: 2px;
     padding-left: 5px;
-    margin-left: 10px;
+    margin-left: 5px;
 }
 
 #restartQuiz{
